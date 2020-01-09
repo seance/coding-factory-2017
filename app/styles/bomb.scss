@@ -1,0 +1,117 @@
+.bomb {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+
+  .bomb-body {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 60%;
+    height: 60%;
+    background-image: radial-gradient(ellipse at 65% 25%, #333, black);
+    border-radius: 50%;
+    box-shadow: 0 0 0 .7em whitesmoke;
+  }
+
+  .bomb-neck {
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    width: 21%;
+    height: 13%;
+    background-color: black;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 0 0 .7em whitesmoke;
+    transform: rotate(-35deg);
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 2 * .7em);
+      background-image: linear-gradient(-90deg, #333, #111);
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+    }
+  }
+
+  .bomb-fuse {
+    position: absolute;
+    top: 19%;
+    left: 25%;
+    width: 20%;
+    height: 30%;
+    border: solid 25px;
+    border-color: #222 #222 transparent transparent;
+    border-radius: 50% 50% 0 0;
+    transform: rotate(-35deg);
+  }
+
+  .bomb-fire-outer {
+    position: absolute;
+    top: 11%;
+    left: 10%;
+    width: 35%;
+    height: 35%;
+    text-align: center;
+    background: whitesmoke;
+    transform: rotate(20deg);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: whitesmoke;
+      transform: rotate(135deg);
+    }
+  }
+
+  .bomb-fire-middle {
+    position: absolute;
+    top: calc(11% + .7em);
+    left: calc(10% + .7em);
+    width: calc(35% - 2 * .7em);
+    height: calc(35% - 2 * .7em);
+    text-align: center;
+    background: radial-gradient(#f00, #b00);
+    transform: rotate(20deg);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: radial-gradient(#f00, #b00);
+      transform: rotate(135deg);
+    }
+  }
+
+  .bomb-fire-inner {
+    position: absolute;
+    top: calc(11% + 4 * .7em);
+    left: calc(10% + 4 * .7em);
+    width: calc(35% - 8 * .7em);
+    height: calc(35% - 8 * .7em);
+    text-align: center;
+    background: radial-gradient(#ff3, #fa0);
+    transform: rotate(20deg);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(#ff3, #fa0);;
+      transform: rotate(135deg);
+    }
+  }
+}

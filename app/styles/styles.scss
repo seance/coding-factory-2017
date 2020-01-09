@@ -1,0 +1,274 @@
+@import 'bomb';
+@import 'bubble';
+@import 'face';
+@import 'terminal';
+@import 'colorspin';
+
+@font-face {
+  font-family: 'Monoton';
+  src: url('/fonts/Monoton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Droid Sans Mono';
+  src: url('/fonts/DroidSansMono.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Digital-7 Mono';
+  src: url('/fonts/digital-7-mono.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Droid Sans Mono';
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+
+  &.disabled {
+    color: darkgray;
+    pointer-events: none;
+  }
+}
+
+textarea, input, button {
+  outline: none;
+}
+
+body {
+  color: whitesmoke;
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1rem;
+    padding: 20px;
+
+    > * {
+      padding-right: 20px;
+    }
+
+    span.gt.active {
+      color: #fc1;
+    }
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #555;
+    padding: 5px;
+
+    .futurice-logo {
+      display: inline-block;
+      width: 100px;
+      height: 1rem;
+      background-image: url('/images/futurice.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 > .c {
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+
+    &.c0 {animation: c0 60s infinite;}
+    &.c1 {animation: c1 60s infinite;}
+    &.c2 {animation: c2 60s infinite;}
+    &.c3 {animation: c3 60s infinite;}
+    &.c4 {animation: c4 60s infinite;}
+    &.c5 {animation: c5 60s infinite;}
+    &.c6 {animation: c6 60s infinite;}
+    &.c7 {animation: c7 60s infinite;}
+    &.c8 {animation: c8 60s infinite;}
+    &.c9 {animation: c9 60s infinite;}
+    &.c10 {animation: c10 60s infinite;}
+    &.c11 {animation: c11 60s infinite;}
+    &.c12 {animation: c12 60s infinite;}
+    &.c13 {animation: c13 60s infinite;}
+    &.c14 {animation: c14 60s infinite;}
+    &.c15 {animation: c15 60s infinite;}
+    &.c16 {animation: c16 60s infinite;}
+    &.c17 {animation: c17 60s infinite;}
+    &.c18 {animation: c18 60s infinite;}
+    &.c19 {animation: c19 60s infinite;}
+    &.c20 {animation: c20 60s infinite;}
+    &.c21 {animation: c21 60s infinite;}
+  }
+
+  .bomb {
+    position: relative;
+  }
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .story {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    padding-bottom: 50px;
+
+    .story-item {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .face {
+      margin: 10px;
+    }
+
+    .story-message-left {
+      align-self: flex-start;
+    }
+
+    .story-message-right {
+      margin-left: auto;
+    }
+
+    .story-message-left, .story-message-right {
+      width: 384px;
+    }
+  }
+
+  input[type='text'] {
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  button[type='submit'] {
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+
+.game-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .timer {
+    color: #e00;
+    font-family: 'Digital-7 Mono';
+    font-size: 3rem;
+    text-shadow: 0 0 5px rgba(238, 0, 0, 0.8);
+    background-color: black;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid #e00;
+    border-radius: 10px;
+    box-shadow: 0 0 0 15px black, 0 0 0 17px #333;
+    margin: 15px;
+  }
+
+  .terminals {
+    display: flex;
+    flex-direction: row;
+
+    .terminal:first-child {
+      margin-right: 100px;
+    }
+  }
+
+  .execute-button {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .codes {
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+
+    .code {
+      font-family: 'Digital-7 Mono';
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: black;
+      border: 2px solid #e00;
+      border-radius: 5px;
+      box-shadow: 0 0 0 8px black, 0 0 0 10px #333;
+      margin: 10px 20px;
+
+      &.ok {
+        color: #27FFC6;
+        text-shadow: 0 0 5px rgba(39, 255, 198, 0.8);
+        border-color: #27FFC6;
+      }
+    }
+  }
+}
+
+.scoreboard {
+
+  .score-table {
+    margin-bottom: 20px;
+    thead {
+      color: #222;
+      background-image: linear-gradient(#ff3, #fa0);
+    }
+
+    tbody tr {
+      height: 2rem;
+
+      &.active {
+        color: #fc1;
+      }
+    }
+
+    th, td {
+      font-weight: 400;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    td {
+      text-align: right;
+    }
+
+    td:nth-child(1) {
+      text-align: center;
+    }
+
+    td:nth-child(3) {
+      text-align: left;
+    }
+  }
+
+  .footnote {
+    color: #555;
+  }
+}

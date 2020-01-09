@@ -1,0 +1,105 @@
+@keyframes pulse {
+  0% {color: #27FFC6;}
+  20% {color: #00ebac;}
+  25% {color: #27FFC6;}
+  35% {color: #05ffbc;}
+  40% {color: #27FFC6;}
+  60% {color: #05ffbc;}
+  70% {color: #27FFC6;}
+}
+
+.terminal {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 20px 0;
+  background-image: linear-gradient(#111, gray);
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background-image: linear-gradient(#1D1C1C, #777575);
+    border-radius: 5% / 50%;
+  }
+
+  .terminal-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 200px 200px rgba(39, 255, 198, 0.25);
+  }
+
+  .terminal-middle {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+    background: black;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background: black;
+      border-radius: 5% / 50%;
+    }
+  }
+
+  .terminal-inner {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+    background-image: radial-gradient(#1F3228, #0A150F);
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background-image: radial-gradient(#284033, #0A150F);
+      border-radius: 5% / 50%;
+    }
+
+    .terminal-text {
+      position: absolute;
+      top: 10%;
+      left: 2%;
+      font-size: .7rem;
+      color: #27FFC6;
+      text-shadow: 0 0 8px #27FFC6;
+      width: 96%;
+      height: 80%;
+      background-color: transparent;
+      border: none;
+      overflow: hidden;
+      resize: none;
+      animation: pulse 5s infinite;
+    }
+  }
+}

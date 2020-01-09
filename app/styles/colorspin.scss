@@ -1,0 +1,249 @@
+$color1: #f22;
+$color2: #f2f;
+$color3: #22f;
+$color4: #2ff;
+$color5: #2f2;
+$color6: #ff2;
+
+@keyframes c0 {
+  0% {color: whitesmoke;}
+  0% {color: whitesmoke;}
+  3% {color: lighten($color1, 30%);}
+  6% {color: lighten($color2, 30%);}
+  9% {color: lighten($color3, 30%);}
+  12% {color: lighten($color4, 30%);}
+  15% {color: lighten($color5, 30%);}
+  18% {color: lighten($color6, 30%);}
+  21% {color: whitesmoke;}
+}
+@keyframes c1 {
+  0% {color: whitesmoke;}
+  3% {color: whitesmoke;}
+  6% {color: lighten($color1, 30%);}
+  9% {color: lighten($color2, 30%);}
+  12% {color: lighten($color3, 30%);}
+  15% {color: lighten($color4, 30%);}
+  18% {color: lighten($color5, 30%);}
+  21% {color: lighten($color6, 30%);}
+  24% {color: whitesmoke;}
+}
+@keyframes c2 {
+  0% {color: whitesmoke;}
+  6% {color: whitesmoke;}
+  9% {color: lighten($color1, 30%);}
+  12% {color: lighten($color2, 30%);}
+  15% {color: lighten($color3, 30%);}
+  18% {color: lighten($color4, 30%);}
+  21% {color: lighten($color5, 30%);}
+  24% {color: lighten($color6, 30%);}
+  27% {color: whitesmoke;}
+}
+@keyframes c3 {
+  0% {color: whitesmoke;}
+  9% {color: whitesmoke;}
+  12% {color: lighten($color1, 30%);}
+  15% {color: lighten($color2, 30%);}
+  18% {color: lighten($color3, 30%);}
+  21% {color: lighten($color4, 30%);}
+  24% {color: lighten($color5, 30%);}
+  27% {color: lighten($color6, 30%);}
+  30% {color: whitesmoke;}
+}
+@keyframes c4 {
+  0% {color: whitesmoke;}
+  12% {color: whitesmoke;}
+  15% {color: lighten($color1, 30%);}
+  18% {color: lighten($color2, 30%);}
+  21% {color: lighten($color3, 30%);}
+  24% {color: lighten($color4, 30%);}
+  27% {color: lighten($color5, 30%);}
+  30% {color: lighten($color6, 30%);}
+  33% {color: whitesmoke;}
+}
+@keyframes c5 {
+  0% {color: whitesmoke;}
+  15% {color: whitesmoke;}
+  18% {color: lighten($color1, 30%);}
+  21% {color: lighten($color2, 30%);}
+  24% {color: lighten($color3, 30%);}
+  27% {color: lighten($color4, 30%);}
+  30% {color: lighten($color5, 30%);}
+  33% {color: lighten($color6, 30%);}
+  36% {color: whitesmoke;}
+}
+@keyframes c6 {
+  0% {color: whitesmoke;}
+  18% {color: whitesmoke;}
+  21% {color: lighten($color1, 30%);}
+  24% {color: lighten($color2, 30%);}
+  27% {color: lighten($color3, 30%);}
+  30% {color: lighten($color4, 30%);}
+  33% {color: lighten($color5, 30%);}
+  36% {color: lighten($color6, 30%);}
+  39% {color: whitesmoke;}
+}
+@keyframes c7 {
+  0% {color: whitesmoke;}
+  21% {color: whitesmoke;}
+  24% {color: lighten($color1, 30%);}
+  27% {color: lighten($color2, 30%);}
+  30% {color: lighten($color3, 30%);}
+  33% {color: lighten($color4, 30%);}
+  36% {color: lighten($color5, 30%);}
+  39% {color: lighten($color6, 30%);}
+  42% {color: whitesmoke;}
+}
+@keyframes c8 {
+  0% {color: whitesmoke;}
+  24% {color: whitesmoke;}
+  27% {color: lighten($color1, 30%);}
+  30% {color: lighten($color2, 30%);}
+  33% {color: lighten($color3, 30%);}
+  36% {color: lighten($color4, 30%);}
+  39% {color: lighten($color5, 30%);}
+  42% {color: lighten($color6, 30%);}
+  45% {color: whitesmoke;}
+}
+@keyframes c9 {
+  0% {color: whitesmoke;}
+  27% {color: whitesmoke;}
+  30% {color: lighten($color1, 30%);}
+  33% {color: lighten($color2, 30%);}
+  36% {color: lighten($color3, 30%);}
+  39% {color: lighten($color4, 30%);}
+  42% {color: lighten($color5, 30%);}
+  45% {color: lighten($color6, 30%);}
+  48% {color: whitesmoke;}
+}
+@keyframes c10 {
+  0% {color: whitesmoke;}
+  30% {color: whitesmoke;}
+  33% {color: lighten($color1, 30%);}
+  36% {color: lighten($color2, 30%);}
+  39% {color: lighten($color3, 30%);}
+  42% {color: lighten($color4, 30%);}
+  45% {color: lighten($color5, 30%);}
+  48% {color: lighten($color6, 30%);}
+  51% {color: whitesmoke;}
+}
+@keyframes c11 {
+  0% {color: whitesmoke;}
+  33% {color: whitesmoke;}
+  36% {color: lighten($color1, 30%);}
+  39% {color: lighten($color2, 30%);}
+  42% {color: lighten($color3, 30%);}
+  45% {color: lighten($color4, 30%);}
+  48% {color: lighten($color5, 30%);}
+  51% {color: lighten($color6, 30%);}
+  54% {color: whitesmoke;}
+}
+@keyframes c12 {
+  0% {color: whitesmoke;}
+  36% {color: whitesmoke;}
+  39% {color: lighten($color1, 30%);}
+  42% {color: lighten($color2, 30%);}
+  45% {color: lighten($color3, 30%);}
+  48% {color: lighten($color4, 30%);}
+  51% {color: lighten($color5, 30%);}
+  54% {color: lighten($color6, 30%);}
+  57% {color: whitesmoke;}
+}
+@keyframes c13 {
+  0% {color: whitesmoke;}
+  39% {color: whitesmoke;}
+  42% {color: lighten($color1, 30%);}
+  45% {color: lighten($color2, 30%);}
+  48% {color: lighten($color3, 30%);}
+  51% {color: lighten($color4, 30%);}
+  54% {color: lighten($color5, 30%);}
+  57% {color: lighten($color6, 30%);}
+  60% {color: whitesmoke;}
+}
+@keyframes c14 {
+  0% {color: whitesmoke;}
+  42% {color: whitesmoke;}
+  45% {color: lighten($color1, 30%);}
+  48% {color: lighten($color2, 30%);}
+  51% {color: lighten($color3, 30%);}
+  54% {color: lighten($color4, 30%);}
+  57% {color: lighten($color5, 30%);}
+  60% {color: lighten($color6, 30%);}
+  63% {color: whitesmoke;}
+}
+@keyframes c15 {
+  0% {color: whitesmoke;}
+  45% {color: whitesmoke;}
+  48% {color: lighten($color1, 30%);}
+  51% {color: lighten($color2, 30%);}
+  54% {color: lighten($color3, 30%);}
+  57% {color: lighten($color4, 30%);}
+  60% {color: lighten($color5, 30%);}
+  63% {color: lighten($color6, 30%);}
+  66% {color: whitesmoke;}
+}
+@keyframes c16 {
+  0% {color: whitesmoke;}
+  48% {color: whitesmoke;}
+  51% {color: lighten($color1, 30%);}
+  54% {color: lighten($color2, 30%);}
+  57% {color: lighten($color3, 30%);}
+  60% {color: lighten($color4, 30%);}
+  63% {color: lighten($color5, 30%);}
+  66% {color: lighten($color6, 30%);}
+  69% {color: whitesmoke;}
+}
+@keyframes c17 {
+  0% {color: whitesmoke;}
+  51% {color: whitesmoke;}
+  54% {color: lighten($color1, 30%);}
+  57% {color: lighten($color2, 30%);}
+  60% {color: lighten($color3, 30%);}
+  63% {color: lighten($color4, 30%);}
+  66% {color: lighten($color5, 30%);}
+  69% {color: lighten($color6, 30%);}
+  72% {color: whitesmoke;}
+}
+@keyframes c18 {
+  0% {color: whitesmoke;}
+  54% {color: whitesmoke;}
+  57% {color: lighten($color1, 30%);}
+  60% {color: lighten($color2, 30%);}
+  63% {color: lighten($color3, 30%);}
+  66% {color: lighten($color4, 30%);}
+  69% {color: lighten($color5, 30%);}
+  72% {color: lighten($color6, 30%);}
+  75% {color: whitesmoke;}
+}
+@keyframes c19 {
+  0% {color: whitesmoke;}
+  57% {color: whitesmoke;}
+  60% {color: lighten($color1, 30%);}
+  63% {color: lighten($color2, 30%);}
+  66% {color: lighten($color3, 30%);}
+  69% {color: lighten($color4, 30%);}
+  72% {color: lighten($color5, 30%);}
+  75% {color: lighten($color6, 30%);}
+  78% {color: whitesmoke;}
+}
+@keyframes c20 {
+  0% {color: whitesmoke;}
+  60% {color: whitesmoke;}
+  63% {color: lighten($color1, 30%);}
+  66% {color: lighten($color2, 30%);}
+  69% {color: lighten($color3, 30%);}
+  72% {color: lighten($color4, 30%);}
+  75% {color: lighten($color5, 30%);}
+  78% {color: lighten($color6, 30%);}
+  81% {color: whitesmoke;}
+}
+@keyframes c21 {
+  0% {color: whitesmoke;}
+  63% {color: whitesmoke;}
+  66% {color: lighten($color1, 30%);}
+  69% {color: lighten($color2, 30%);}
+  72% {color: lighten($color3, 30%);}
+  75% {color: lighten($color4, 30%);}
+  78% {color: lighten($color5, 30%);}
+  81% {color: lighten($color6, 30%);}
+  84% {color: whitesmoke;}
+}
